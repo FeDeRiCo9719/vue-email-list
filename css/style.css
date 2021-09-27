@@ -4,3 +4,11 @@
     padding: 0%;
     box-sizing: border-box;
 }
+/*---------------------- BODY ----------------------*/
+body {
+    text-align: center;
+    padding-top: 100px;
+    background-color: rgb(45, 85, 85);
+    color: rgb(255, 255, 255);
+    font-family: 'Lato';
+}
