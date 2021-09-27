@@ -8,13 +8,17 @@ Far comparire gli indirizzi email solamente quando sono stati tutti generati.
 
 var app = new Vue({
     el: '#root',
-    data: {},
+    data: {
+        listEmail: [],
+        email:'',
+    },
     methods: {},
 
     mounted() {
         axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
-        .then(function (response) {
-            console.log(response.status);
+        .then((response) => {
+            // console.log(this);
+            this.email = response.data.response;
         });
     }
 });
