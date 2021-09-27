@@ -18,7 +18,7 @@
 
     <div id="root">
         <ul>
-            <li v-for="(email,index) in listEmail" :key="index">
+            <li v-if="listEmail.length === 10" v-for="(email,index) in listEmail" :key="index">
               {{ listEmail[index] }}
             </li>
         </ul>
